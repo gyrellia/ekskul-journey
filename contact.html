@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Contact | Ekskul Journey</title>
+    <link rel="shortcut icon" href="" />
+  </head>
+  <body>
+    <header>
+      <h1>Ekskul Journey</h1>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="ekskul.html">Ekstrakurikuler</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+        <section>
+          <div class="form">
+            <h2>Pendaftaran</h2>
+            <p>Isi form di bawah ini untuk pendaftaran ekstrakurikuler.</p>
+            <form>
+              <fieldset>
+                <br><label for="name">Nama</label>
+                <input type="text" id="name" name="name"><br>
+                <br><label for="name">No. Telepon</label>
+                <input type="text" id="name" name="name"><br>
+                <br><label for="kelas">Kelas</label>
+                <input type="text" id="kelas" name="kelas"><br>
+                <br><label for="ekskul">Ekstrakurikuler</label>
+                <input type="text" id="ekskul" name="ekskul"><br>
+                <input type="submit" value="Kirim">
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 Ekskul Journey. All rights reserved. | <a href="https://www.instagram.com/xyzyerellie_?utm_source=qr&r=nametag " target="_blank">@xyzyerellie_</a></p>
+      </footer>
+
+      <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+          navbar = document.querySelector(".nav-bar")
+          navbar.classList.toggle("active")
+        }
+      </script>
+        </body>
+      </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>About | Ekskul Journey</title>
+    <link rel="shortcut icon" href="" />
+  </head>
+  <body>
+     <header>
+      <h1>Ekskul Journey</h1>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="ekskul.html">Ekstrakurikuler</a>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <section>
+      <div class="about-section">
+        <article>
+        <h2>Selamat datang di Ekskul Journey!</h2>
+        <h4>Platform kami untuk merayakan dan mempromosikan kegiatan ekstrakurikuler.<br>Kami percaya ekstrakurikuler memainkan peran penting dalam pengembangan pribadi dan kesejahteraan siswa.</h4>
+        <p>Di sini, kami menampilkan berbagai klub dan kegiatan, dari olahraga hingga seni dan akademik. Kami berdedikasi untuk menciptakan lingkungan yang mendukung dan inklusif, memastikan setiap siswa memiliki kesempatan untuk mengeksplorasi minat mereka. Selamat menjelajahi!</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Ekskul Journey. All rights reserved. | <a href="https://www.instagram.com/xyzyerellie_?utm_source=qr&r=nametag " target="_blank">@xyzyerellie_</a></p>
+  </footer>
+
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+      navbar = document.querySelector(".nav-bar")
+      navbar.classList.toggle("active")
+    }
+  </script>
+    </body>
+  </html>

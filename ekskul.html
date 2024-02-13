@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="ekskul.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Ekstrakurikuler | Ekskul Journey</title>
+    <link rel="shortcut icon" href="" />
+  </head>
+  <body>
+    <header>
+      <h1>Ekskul Journey</h1>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="dropdown">
+            <a href="ekskul.html">Ekstrakurikuler</a>
+            <div class="dropdown-content">
+              <a href="#">Volly Ball</a>
+              <a href="#">English Club</a>
+              <a href="#">Takraw</a>
+              <a href="#">Futsal</a>
+              <a href="#">Akuatik</a>
+            </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+        <section>
+          <div class="table">
+            <h2>Kesempatan untuk Mengembangkan Minat dan Bakat Kalian!</h2>
+            <p>Bergabunglah dengan Ekskul Kami Sekarang.</p>
+      <table>
+        <tr>
+          <th>No.</th>
+          <th>Nama Ekstrakurikuler</th>
+          <th>Rincian Ekstrakurikuler</th>
+          <th>Gambar Ekstrakurikuler</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Volly Ball</td>
+          <td>Bola voli merupakan permainan beregu yang bertujuan untuk memukul bola ke arah bidang lapangan lawan untuk mendapatkan poin.</td>
+          <td><img src="img/voli.jpeg" width="300" height="200"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>English Club</td>
+          <td>English Club adalah sebuah wadah bagi peserta didik dalam menyalurkan minat dan bakat serta pengetahuan di bidang Bahasa Inggris.</td>
+          <td><img src="img/eng club.jpeg" width="300" height="200"></td>
+        </tr>
+        <tr>
+        <td>3</td>
+          <td>Takraw</td>
+          <td>Sepak takraw adalah jenis olahraga campuran dari sepak bola dan bola voli, dimainkan di lapangan ganda bulu tangkis, dan pemain tidak boleh menyentuh bola dengan tangan.</td>
+          <td><img src="img/takraw.jpeg" width="300" height="200"></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Futsal</td>
+          <td>Futsal adalah permainan bola yang dimainkan oleh dua tim, yang masing-masing beranggotakan lima orang.</td>
+          <td><img src="img/futsal.jpeg" width="300" height="200"></td>
+        <tr>
+          <td>5</td>
+          <td>Akuatik</td>
+          <td>akuatik merupakan sebuah aktivitas dengan menggunakan media air.</td>
+          <td><img src="img/akuatik.jpeg" width="300" height="200"></td>
+        </tr>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Ekskul Journey. All rights reserved. | <a href="https://www.instagram.com/xyzyerellie_?utm_source=qr&r=nametag " target="_blank">@xyzyerellie_</a></p>
+  </footer>
+
+  <script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+      navbar = document.querySelector(".nav-bar")
+      navbar.classList.toggle("active")
+    }
+  </script>
+    </body>
+  </html>

@@ -1,0 +1,225 @@
+*{
+    font-family: "Poppins", sans-serif
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    background-color: rgb(57, 150, 111);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 26px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  
+  main {
+    padding-top: 0px auto;
+  }
+  
+  section {
+    height: 70dvh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .daftar-button {
+    background-color: rgb(109, 187, 255);
+    color: white;
+    border-radius: 20px;
+    width: 80px;
+    height: 40px;
+    margin: 10px;
+    padding-right: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .content h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-bottom: -20px;
+    font-style: normal;
+  }
+  
+  .content h2 {
+    color: rgb(57, 150, 111);
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-bottom: -10px;
+    font-style: normal;
+  }
+  
+  .btn {
+    margin-left: -10px;
+  }
+  
+  .content p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  footer {
+    background-color: rgb(57, 150, 111);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  footer p {
+    color: white;
+  }
+
+   /* Ukurannya */
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .mynavbar .navlink {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+}
+
+/* Handphone */
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 60%;
+  } 
+  section {
+    padding-bottom: 40px;
+    padding-top: 0px;
+  }
+  .content h2 {
+    font-size: 20px;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 26px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: rgb(57, 150, 111);
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0 16px 8px -9px rgb(191, 191, 191, 1);
+  }
+  .nav-bar.active {
+    height: 250px;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar ul li {
+    display: flex;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: white;
+  }
+  .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+}

@@ -1,0 +1,238 @@
+*{
+    font-family: "Poppins", sans-serif
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    background-color: rgb(57, 150, 111);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 26px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(57, 150, 111);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 7px;
+    left: 90%;
+    transform: translateX(-50%);
+  }
+  
+  .dropdown-content a {
+    color: rgb(253, 252, 252);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #fff;
+    color: rgb(57, 150, 111);
+  }
+  
+  .dropdown:hover
+  .dropdown-content {
+    display: block;
+  }
+  
+  main {
+    padding-top: 0px auto;
+  }
+  
+  section {
+    height: 230dvh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  h2, p {
+    text-align: center;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+  }
+
+  th {
+    background-color: rgb(8, 185, 135);
+    border: 2px solid black;
+    vertical-align: middle;
+  }
+
+  td {
+    border: 2px solid black;
+  }
+
+  tr {
+    background-color: white;
+  }
+  
+  footer {
+    background-color: rgb(57, 150, 111);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  footer p {
+    color: white;
+  }
+
+   /* Ukurannya */
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+  .mynavbar .navlink {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+}
+
+/* Handphone */
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 60%;
+  } 
+  section {
+    padding-bottom: 40px;
+    padding-top: 0px;
+  }
+  .content h2 {
+    font-size: 20px;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 26px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: rgb(57, 150, 111);
+    transition: 0.5s;
+    overflow: hidden;
+    box-shadow: 0 16px 8px -9px rgb(191, 191, 191, 1);
+  }
+  .nav-bar.active {
+    height: 250px;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar ul li {
+    display: flex;
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: white;
+  }
+  .simply-section {
+    padding: 45px;
+    margin: 3px;
+  }
+}
